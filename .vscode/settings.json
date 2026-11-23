@@ -1,0 +1,32 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": true,
+  "cmake.configureOnEdit": false,
+
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.intelliSenseMode": "gcc-arm",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/project/inc",
+    "${workspaceFolder}/libraries/drivers/inc",
+    "${workspaceFolder}/libraries/cmsis/cm4/core_support",
+    "${workspaceFolder}/libraries/cmsis/cm4/device_support",
+    "${workspaceFolder}/middlewares/freertos/source/include",
+    "${workspaceFolder}/middlewares/freertos/source/portable/memmang",
+    "${workspaceFolder}/middlewares/freertos/source/portable/GCC/ARM_CM4F"
+  ],
+  "C_Cpp.default.defines": [
+    "USE_STDPERIPH_DRIVER",
+    "AT32F403AVGT7",
+    "DEBUG"
+  ],
+
+  "cortex-debug.gdbPath": "C:/Users/Konstantin_PC/AppData/Local/at32-tools/gcc-arm-none-eabi/V10.3/bin/arm-none-eabi-gdb.exe",
+  "cortex-debug.openocdPath": "C:/Users/Konstantin_PC/AppData/Local/at32-tools/OpenOCD/V2.0.9/bin/openocd.exe",
+
+  "files.associations": {
+    "*.s": "arm",
+    "*.ld": "linkerscript",
+    "*.h": "c"
+  }
+}
